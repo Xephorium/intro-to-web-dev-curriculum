@@ -51,11 +51,11 @@ let shuttleSpeed = 15000;
 
    ```javascript
    if (engineIndicatorLight === "green") {
-      console.log("engines have started");
+       console.log("engines have started");
    } else if (engineIndicatorLight === "green blinking") {
-      console.log("engines are preparing to start");
+       console.log("engines are preparing to start");
    } else {
-      console.log("engines are off");
+       console.log("engines are off");
    }
    ```
 
@@ -70,9 +70,9 @@ let shuttleSpeed = 15000;
    {{% expand "Check Your Solution" %}}
    ```javascript
    if (crewStatus) {
-     console.log("Crew Ready");
+       console.log("Crew Ready");
    } else {
-     console.log("Crew Not Ready");
+       console.log("Crew Not Ready");
    }
    ```
    {{% /expand %}}
@@ -85,11 +85,11 @@ let shuttleSpeed = 15000;
    {{% expand "Check Your Solution" %}}
    ```javascript
    if (computerStatusCode === 200) {
-     console.log("Please stand by. Computer is rebooting.");
+       console.log("Please stand by. Computer is rebooting.");
    } else if (computerStatusCode === 400) {
-     console.log("Success! Computer online.");
+       console.log("Success! Computer online.");
    } else {
-     console.log("ALERT: Computer offline!");
+       console.log("ALERT: Computer offline!");
    }
    ```
    {{% /expand %}}
@@ -102,11 +102,11 @@ let shuttleSpeed = 15000;
    {{% expand "Check Your Solution" %}}
    ```javascript
    if (shuttleSpeed > 17500) {
-     console.log("ALERT: Escape velocity reached!");
+       console.log("ALERT: Escape velocity reached!");
    } else if (shuttleSpeed < 8000) {
-     console.log("ALERT: Cannot maintain orbit!");
+       console.log("ALERT: Cannot maintain orbit!");
    } else {
-     console.log("Stable speed.");
+       console.log("Stable speed.");
    }
    ```
    {{% /expand %}}
@@ -117,17 +117,17 @@ let shuttleSpeed = 15000;
 
    ```javascript
    if (crewStatus && computerStatusCode === 200 && spaceSuitsOn) {
-      console.log("all systems go");
+       console.log("all systems go");
    } else {
-      console.log("WARNING. Not ready");
+       console.log("WARNING. Not ready");
    }
    ```
 
    ```javascript
    if (!crewStatus || computerStatusCode !== 200 || !spaceSuitsOn) {
-      console.log("WARNING. Not ready");
+       console.log("WARNING. Not ready");
    } else {
-      console.log("all systems go");
+       console.log("all systems go");
    }
    ```
 
@@ -158,17 +158,17 @@ Run your code several times ot make sure it prints the correct phrase for each s
 {{% expand "Check Your Solution" %}}
 ```javascript
 if (fuelLevel < 1000 || engineTemperature > 3500 || engineIndicatorLight === "red blinking"){
-  console.log("ENGINE FAILURE IMMINENT!");
+    console.log("ENGINE FAILURE IMMINENT!");
 } else if (fuelLevel <= 5000 || engineTemperature > 2500){
-  console.log("Check fuel level. Engines running hot.");
+    console.log("Check fuel level. Engines running hot.");
 } else if (fuelLevel > 20000 && engineTemperature <= 2500){
-  console.log("Full tank. Engines good.");
+    console.log("Full tank. Engines good.");
 } else if (fuelLevel > 10000 && engineTemperature <= 2500){
-  console.log("Fuel level above 50%. Engines good.");
+    console.log("Fuel level above 50%. Engines good.");
 } else if (fuelLevel > 5000 && engineTemperature <= 2500){
-  console.log("Fuel level above 25%. Engines good.");
+    console.log("Fuel level above 25%. Engines good.");
 } else {
-  console.log("Fuel and engine status pending...");
+    console.log("Fuel and engine status pending...");
 }
 ```
 {{% /expand %}}

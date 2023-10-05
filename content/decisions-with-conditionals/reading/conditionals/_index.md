@@ -63,13 +63,13 @@ The condition in an `if` statement can be any boolean expression, such as `name 
 {{% notice blue Example "rocket" %}}
 ```javascript
 if (num % 2 === 0 && num > 3) {
-   console.log(num, "is even");
-   console.log(num, "is greater than 3");
+    console.log(num, "is even");
+    console.log(num, "is greater than 3");
 }
 ```
 {{% /notice %}}
 
-While not required, the code within a conditional code block is typically indented to make it more readable. Similarly, it is a common convention to place the opening `{` at the end of the first line, and the closing `}` on a line of its own following the last line of the code block.
+While not required, the code within a conditional code block is typically indented to make it more readable. The standard for a single indentation is either the `tab` character or four spaces. Similarly, it is a common convention to place the opening `{` at the end of the first line, and the closing `}` on a line of its own following the last line of the code block.
 
 You should follow such conventions, even though ignoring them will not create an error. To see why, compare the readability of this example, which is functionally equivalent to the one above.
 
@@ -92,7 +92,7 @@ follow.
 
 ```javascript
 if (!billHasBeenPaid)
-   console.log("Your bill is due soon!");
+    console.log("Your bill is due soon!");
 ```
 
 We will use curly brackets for ALL conditional code blocks, and encourage
@@ -113,9 +113,9 @@ We can use an `else` clause within our bank app to send a message if no bills ar
 let billHasBeenPaid = true;
 
 if (!billHasBeenPaid) {
-   console.log("Your bill is due soon!");
+    console.log("Your bill is due soon!");
 } else {
-   console.log("Your payments are up to date.");
+    console.log("Your payments are up to date.");
 }
 ```
 
@@ -143,11 +143,11 @@ let x = 10;
 let y = 20;
 
 if (x > y) {
-   console.log("x is greater than y");
+    console.log("x is greater than y");
 } else if (x < y) {
-   console.log("x is less than y");
+    console.log("x is less than y");
 } else {
-   console.log("x and y are equal");
+    console.log("x and y are equal");
 }
 ```
 
@@ -171,9 +171,9 @@ let x = 10;
 let y = 10;
 
 if (x > y) {
-   console.log("x is greater than y");
+    console.log("x is greater than y");
 } else if (x < y) {
-   console.log("x is less than y");
+    console.log("x is less than y");
 }
 ```
 
@@ -192,13 +192,13 @@ let x = 10;
 let y = 20;
 
 if (x > y) {
-   console.log("x is greater than y");
+    console.log("x is greater than y");
 } else if (x < y) {
-   console.log("x is less than y");
+    console.log("x is less than y");
 } else if (x % 5 === 0) {
-   console.log("x is divisible by 5");
+    console.log("x is divisible by 5");
 } else if (x % 2 === 0) {
-   console.log("x is even");
+    console.log("x is even");
 }
 ```
 
@@ -219,11 +219,11 @@ What does the following code print?
 ```javascript
 let a = 7;
 if (a % 2 === 1) {
-   console.log("Launch");
+    console.log("Launch");
 } else if (a > 5) {
-   console.log("Code");
+    console.log("Code");
 } else {
-   console.log("LaunchCode");
+    console.log("LaunchCode");
 }
 ```
 
