@@ -45,7 +45,7 @@ Here is an explicit example that mimics our banking program.
 let billHasBeenPaid = false;
 
 if (!billHasBeenPaid) {
-   console.log("Your bill is due soon!");
+    console.log("Your bill is due soon!");
 }
 ```
 
